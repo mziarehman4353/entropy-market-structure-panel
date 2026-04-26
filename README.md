@@ -1,22 +1,22 @@
-# 📊 Entropy, Market Structure, and Stock Returns  
+# Entropy, Market Structure, and Stock Returns  
 ### A Panel Data Analysis of Informational Complexity in Emerging Markets
 
 ---
 
-## 🔍 Overview
+## Overview
 
 This repository presents a **panel econometric study** examining how **informational complexity (Entropy, KL divergence)** and **market concentration (HHI)** jointly influence stock returns.
 
 The study integrates:
-- 📐 Information Theory  
-- 🏭 Industrial Organization  
-- 📊 Panel Econometrics  
+- Information Theory  
+- Industrial Organization  
+- Panel Econometrics  
 
 using a **multi-model fixed effects framework**.
 
 ---
 
-## 🧠 Key Contributions
+## Key Contributions
 
 - Introduces **entropy and KL divergence** as predictors of financial returns  
 - Demonstrates **nonlinear interaction effects** between information and market structure  
@@ -25,7 +25,7 @@ using a **multi-model fixed effects framework**.
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 
 data/ → Final panel dataset
@@ -36,9 +36,9 @@ notebooks/ → (Colab / analysis notebooks)
 
 ---
 
-## 📊 Key Results
+## Key Results
 
-### 🔹 Main Regression Results (No Time Fixed Effects)
+### Main Regression Results (No Time Fixed Effects)
 
 | Variable        | Model 1 | Model 2 | Model 3 | Model 4 |
 |----------------|--------|--------|--------|--------|
@@ -55,40 +55,40 @@ notebooks/ → (Colab / analysis notebooks)
 
 ---
 
-## 📈 Key Visualizations
+## Key Visualizations
 
 ### 1. Time-Series Dynamics
 ![Time Series](figures/timeseries_entropy_kl.png)
 
-➡️ Shows co-movement between entropy and KL over time, capturing **information regime shifts**
+Shows co-movement between entropy and KL over time, capturing **information regime shifts**
 
 ---
 
 ### 2. Market Structure Trend (HHI)
 ![HHI Trend](figures/hhi_trend.png)
 
-➡️ Indicates relatively stable but **sector-dependent concentration patterns**
+Indicates relatively stable but **sector-dependent concentration patterns**
 
 ---
 
 ### 3. Correlation Structure
 ![Correlation Matrix](figures/correlation_matrix.png)
 
-➡️ Confirms **low multicollinearity**, supporting regression validity
+Confirms **low multicollinearity**, supporting regression validity
 
 ---
 
 ### 4. Distribution of Returns
 ![Returns Distribution](figures/dist_Return.png)
 
-➡️ Reveals **fat tails**, justifying use of KL divergence
+Reveals **fat tails**, justifying use of KL divergence
 
 ---
 
 ### 5. Interaction Effect (Core Finding)
 ![Interaction Effect](figures/interaction_entropy_return.png)
 
-➡️ Demonstrates that:
+Demonstrates that:
 > The impact of entropy on returns **depends on market concentration**
 
 ---
@@ -96,25 +96,25 @@ notebooks/ → (Colab / analysis notebooks)
 ### 6. Model Coefficients (Main Models)
 ![Main Coefficients](figures/coef_main_models.png)
 
-➡️ Visual comparison of coefficient stability across specifications
+Visual comparison of coefficient stability across specifications
 
 ---
 
 ### 7. Fixed Effects Robustness
 ![FE Coefficients](figures/coef_fe_models.png)
 
-➡️ Shows attenuation of effects under **time fixed effects**
+Shows attenuation of effects under **time fixed effects**
 
 ---
 
 ### 8. Residual Diagnostics
 ![Residuals](figures/residual_distribution.png)
 
-➡️ Residuals are approximately centered → model is well-behaved
+Residuals are approximately centered → model is well-behaved
 
 ---
 
-## ⚙️ Methodology
+## Methodology
 
 ### Model Specification
 
@@ -137,7 +137,7 @@ Entropy\_HHI = Entropy_{t-1} 	imes HHI_{t-1}
 
 ---
 
-## 🧪 Data
+## Data
 
 - Source: **Yahoo Finance + World Bank**
 - Period: **2005–2026**
@@ -147,7 +147,7 @@ Entropy\_HHI = Entropy_{t-1} 	imes HHI_{t-1}
 
 ---
 
-## 📌 Reproducibility
+## Reproducibility
 
 You can run the full analysis using Google Colab:
 
@@ -157,41 +157,41 @@ You can run the full analysis using Google Colab:
 
 ---
 
-## 📎 Results Files
+## Results Files
 
 - `results/coeff_main.csv` → Main regression results  
 - `results/coeff_fe.csv` → Fixed effects robustness  
 
 ---
 
-## 🏁 Key Takeaways
+## Key Takeaways
 
-- 📊 Information complexity predicts returns — but conditionally  
-- 🏭 Market concentration moderates informational value  
-- 🌍 Macroeconomic factors absorb large variation  
-- 🔁 Nonlinear interaction effects are the most robust finding  
+- Information complexity predicts returns — but conditionally  
+- Market concentration moderates informational value  
+- Macroeconomic factors absorb large variation  
+- Nonlinear interaction effects are the most robust finding  
 
 ---
 
-## 📜 License
+## License
 
 MIT License
 
 ---
 
-## 👤 Author
+## Author
 
-**Zia Ur Rehman Zafar**  
+**Zia Ul Rehman Zafar**  
 Research in Financial Econometrics & Machine Learning
 
 ---
 
-## ⭐ Citation
+## Citation
 
 If you use this work, please cite:
 
 
-Zafar, Z. U. R. (2026). Entropy, Market Structure, and Stock Returns:
+ZUR ZAFAR (2026). Entropy, Market Structure, and Stock Returns:
 A Panel Data Approach.
 
 
